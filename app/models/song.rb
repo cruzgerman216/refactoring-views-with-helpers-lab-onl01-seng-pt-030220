@@ -6,7 +6,7 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name=(name)
-    puts self.artist
-    self.artist.name = name
+    artist = Artist.find_by(:name => name)
+    self.artist = artist
   end
 end
