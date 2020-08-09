@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
   def artist_name
     puts self.artist
     puts self.artist.name
-    self.artist.name
+    return self.artist.name
   end
 
   def artist_name=(name)
