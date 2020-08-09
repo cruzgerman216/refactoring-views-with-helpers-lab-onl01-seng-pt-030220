@@ -2,8 +2,6 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
   def artist_name
-    puts self.artist
-    puts self.artist.name
     return artist.name
   end
 
