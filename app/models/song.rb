@@ -2,6 +2,7 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
   def artist_name
+    puts self.artist
     self.artist.name
   end
 
@@ -9,7 +10,7 @@ class Song < ActiveRecord::Base
     #
     # artist = Artist.find_by(:name => name)
     # self.artist = artist
-    # self.artist.name = name
+    self.artist.name = name
 
   end
 end
