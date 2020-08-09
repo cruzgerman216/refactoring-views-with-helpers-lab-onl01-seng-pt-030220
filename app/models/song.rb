@@ -3,6 +3,7 @@ class Song < ActiveRecord::Base
 
   def artist_name
     puts self.artist
+    puts self.artist.name
     self.artist.name
   end
 
